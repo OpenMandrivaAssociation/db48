@@ -167,7 +167,7 @@ Conflicts: %{libname_orig}4.1-devel %{libname_orig}4.2-devel
 Conflicts: %{libname_orig}4.3-devel %{libname_orig}4.4-devel
 Conflicts: %{libname_orig}4.5-devel
 Conflicts: %{libname_orig}4.6-devel
-Conflicts: %{libname_orig}4.7devel
+Conflicts: %{libname_orig}4.7-devel
 Provides: db-devel = %{version}-%{release}
 Provides: db4-devel = %{version}-%{release}
 
