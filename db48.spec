@@ -158,7 +158,9 @@ This package contains command line tools for managing Berkeley DB databases.
 Summary: Development libraries/header files for the Berkeley DB library
 Group: Development/Databases
 Requires: %{libname} = %{version}-%{release}
+%if %{!?_without_tcl:1}%{?_without_tcl:0}
 Requires: %{libdbtcl} = %{version}-%{release}
+%endif
 Requires: %{libdbcxx} = %{version}-%{release}
 Provides: db%{__soversion}-devel = %{version}-%{release}
 Provides: libdb%{__soversion}-devel = %{version}-%{release}
