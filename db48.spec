@@ -47,8 +47,8 @@
 
 Summary:	The Berkeley DB database library for C
 Name:		db48
-Version:	4.8.24
-Release:	%mkrel 2
+Version:	4.8.26
+Release:	%mkrel 1
 Source0:	http://download.oracle.com/berkeley-db/db-%{version}.tar.gz
 # statically link db1 library
 Patch0:		db-4.2.52-db185.patch
