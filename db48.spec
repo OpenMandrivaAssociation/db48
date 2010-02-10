@@ -118,7 +118,6 @@ Group:          Development/Java
 %description -n %{libdbjava}-javadoc
 Javadoc for %{name}.
 %endif
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %if %{!?_without_tcl:1}%{?_without_tcl:0}
 %package -n %{libdbtcl}
