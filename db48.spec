@@ -47,12 +47,13 @@
 
 Summary:	The Berkeley DB database library for C
 Name:		db48
-Version:	4.8.26
+Version:	4.8.30
 Release:	%mkrel 1
 Source0:	http://download.oracle.com/berkeley-db/db-%{version}.tar.gz
 # statically link db1 library
 Patch0:		db-4.2.52-db185.patch
 Patch1:		db-4.7.25-fix-format-errors.patch
+Patch2:		db-4.8.30-tcl-link.patch
 # fedora patches
 Patch101:	db-4.7.25-jni-include-dir.patch
 URL:		http://www.oracle.com/technology/software/products/berkeley-db/
@@ -255,6 +256,7 @@ find . -type f -perm 0444 -exec chmod 644 {} \;
 %{__rm} -r docs/java
 %patch0 -p1 -b .db185
 %patch1 -p1 -b .format
+%patch2 -p0 -b .tcl
 
 # fedora patches
 %patch101 -p1 -b .jni
