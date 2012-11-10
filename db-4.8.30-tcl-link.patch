@@ -1,0 +1,11 @@
+--- dist/Makefile.in.link	2010-07-18 18:41:43.000000000 +0200
++++ dist/Makefile.in	2010-07-18 18:43:36.000000000 +0200
+@@ -140,7 +140,7 @@
+ # Tcl support is optional and requires shared libraries.
+ ##################################################
+ TCL_INCLUDE_SPEC=	@TCL_INCLUDE_SPEC@
+-LIBTSO_LIBS=	@LIBTSO_LIBS@ @LIBSO_LIBS@
++LIBTSO_LIBS=	@LIBTSO_LIBS@ @LIBSO_LIBS@ -ltcl
+ libtso_base=	libdb_tcl
+ libtso=		$(libtso_base)-$(LIBVERSION)@LIBTSO_MODSUFFIX@
+ libtso_static=	$(libtso_base)-$(LIBVERSION).a
